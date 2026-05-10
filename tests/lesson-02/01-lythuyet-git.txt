@@ -1,0 +1,8 @@
+Câu hỏi: Giải thích các câu lệnh: git init, git add <file_name>, git add ., git
+commit -m “message”.
+
+Trả lời:
+- git init:Khởi tạo repo local cho thư mục đang đứng. Đưa file từ local vào vùng Working Directory.
+- git add <file_name>: Đưa file chỉ định ở Working Directory vào vùng Staging Area
+- git add .: Đưa file tất cả file còn đang ở Working Directory vào vùng Staging Area
+- git commit -m “message”: Đưa tất cả file từ Staging Area sang vùng Repository
