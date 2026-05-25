@@ -1,0 +1,4 @@
+git commit --amend 
+git commit --amend -m”<message>”: Thay đổi commit message mới nhất
+git restore --staged <file>: Un-stage file chỉ định, chuyển từ vùng Staging về vùng Working Directory  
+git reset HEAD~1: Đưa nội dung commit cuối về working directory

@@ -1,0 +1,50 @@
+a: Tạo 3 file: file1, file2, file3
+- Local: file1, file2, file3
+- Working directory: 
+- Staging:
+- Repository:
+
+b: Chạy lệnh: git init
+- Local: file1, file2, file3
+- Working directory: file1, file2, file3 
+- Staging:
+- Repository:
+
+c: Chạy lệnh: git commit -m”init project”
+Báo lỗi do không file nào nằm ở Staging
+
+d. Chạy lệnh: git add file1
+- Local: file1, file2, file3
+- Working directory: file2, file3 
+- Staging: file1
+- Repository:
+
+e. Chạy lệnh: git commit -m”add file”
+- Local: file1, file2, file3
+- Working directory: file2, file3
+- Staging:
+- Repository: file1
+
+f. Chạy lệnh: git add .
+- Local: file1, file2, file3
+- Working directory:
+- Staging: file2, file3
+- Repository: file1
+
+g. Chạy lệnh: git restore --staged file2
+- Local: file1, file2, file3
+- Working directory: file2
+- Staging: file3
+- Repository: file1
+
+h. Chạy lệnh: git commit -m”add all files”
+- Local: file1, file2, file3
+- Working directory: file2
+- Staging: 
+- Repository: file1 (commit 1), file3 (commit 2)
+
+i. Chạy lệnh: git reset HEAD~1
+- Local: file1, file2, file3
+- Working directory: file2, file 3
+- Staging: 
+- Repository: file1 (commit 1)
