@@ -1,0 +1,27 @@
+Giả sử bạn đang đứng tại vị trí của //div[@id='child']. Hãy liệt kê:
+a. Các phần tử con (child):
+//div[@id='child']/child::*
+
+b. Các phần tử cha (parent):
+//div[@id='child']/parent::*
+
+c. Các phần tử hậu duệ (descendant):
+//div[@id='child']/descendant::*
+
+d. Các phần tử tổ tiên (ancestor):
+//div[@id='child']/ancestor::*
+
+e. Các phần tử anh em (sibling):
+//div[@id='child']/preceding-sibling::* | //div[@id='child']/following-sibling::*
+
+f. Các phần tử phía sau (following):
+//div[@id='child']/following::*
+
+g. Các phần tử phía trước (preceding):
+//div[@id='child']/preceding::*
+
+h. Các phần tử anh em phía sau cùng cấp (following-sibling):
+//div[@id='child']/following-sibling::*
+
+i. Các phần tử anh em phía trước cùng cấp (preceding-sibling):
+//div[@id='child']/preceding-sibling::*
