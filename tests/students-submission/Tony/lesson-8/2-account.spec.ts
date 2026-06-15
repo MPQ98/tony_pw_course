@@ -68,7 +68,7 @@ test.describe('ACCOUNT - Account: Tạo user', async () => { //Nhóm các testca
             await expect(page.locator("//div[contains(text(), 'Profile')]")).toBeVisible();
         });
     });
-    test('ACC_001_2: Xóa user vừa tạo', async ({ page }) => {
+    test('ACC_001_2: Xóa user editor vừa tạo', async ({ page }) => {
         const className = "k23";//Cần check lại chỗ này có gom được với trên kia không?
         const name = "quy"//Cần check lại chỗ này có gom được với trên kia không?
         await test.step('1. Vào menu Users, tìm user vừa tạo', async () => {
@@ -84,10 +84,6 @@ test.describe('ACCOUNT - Account: Tạo user', async () => { //Nhóm các testca
             await expect(page.locator("//div[@id = 'message']")).toContainText('User deleted.');
         });
     });
-});
-/*----------------------------------------------------------------------------------------------*/
-
-test.describe('ACCOUNT - Account: Tạo user', async () => { //Nhóm các testcase chung 1 nhóm
     test('ACC_002_1: Tạo user có nhóm quyền subscriber', async ({ page }) => {
         const addUser = page.locator("//a[@href='https://pw-practice-dev.playwrightvn.com/wp-admin/user-new.php' and text()='Add User']");
         const className = "k23";
@@ -136,7 +132,7 @@ test.describe('ACCOUNT - Account: Tạo user', async () => { //Nhóm các testca
             await expect(page.locator("//div[contains(text(), 'Profile')]")).toBeVisible();
         });
     });
-    test('ACC_002_2: Xóa user vừa tạo', async ({ page }) => {
+    test('ACC_002_2: Xóa user subcriber vừa tạo', async ({ page }) => {
         const className = "k23";//Cần check lại chỗ này có gom được với trên kia không?
         const name = "quy"//Cần check lại chỗ này có gom được với trên kia không?
         await test.step('1. Vào menu Users, tìm user vừa tạo', async () => {
